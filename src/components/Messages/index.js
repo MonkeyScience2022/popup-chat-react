@@ -30,7 +30,7 @@ function Message({ message }) {
         <div
           className="sc-message--avatar"
           style={{
-            backgroundImage: `url(${chatIconUrl})`
+            backgroundImage: `url(${chatIconUrl.src})`
           }}
         />
 
