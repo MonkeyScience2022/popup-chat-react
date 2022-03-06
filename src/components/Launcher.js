@@ -8,6 +8,7 @@ import launcherIconActive from './../assets/close-icon.png';
 class Launcher extends Component {
 
   constructor() {
+    console.log(launcherIcon, incomingMessageSound, launcherIconActive)
     super();
     this.state = {
       launcherIcon,
@@ -52,8 +53,8 @@ class Launcher extends Component {
       <div id="sc-launcher">
 	      <div className={classList.join(' ')} onClick={this.handleClick.bind(this)}>
           <MessageCount count={this.props.newMessagesCount} isOpen={isOpen} />
-          <img className={'sc-open-icon'} src={launcherIconActive} />
-          <img className={'sc-closed-icon'} src={launcherIcon} />
+          <img className={'sc-open-icon'} src={launcherIconActive.src} />
+          <img className={'sc-closed-icon'} src={launcherIcon.src} />
         </div>
 
 	      <ChatWindow

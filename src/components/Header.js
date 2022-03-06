@@ -7,7 +7,7 @@ function Header(props) {
       <img className="sc-header--img" src={props.imageUrl} alt="" />
       <div className="sc-header--team-name"> {props.teamName} </div>
       <div className="sc-header--close-button" onClick={props.onClose}>
-        <img src={closeIcon} alt="" />
+        <img src={closeIcon.src} alt="" />
       </div>
     </div>
   );
